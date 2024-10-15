@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+img{vertical-align: top; border: 0;}
+a{color: black; text-decoration: none;}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#header{
+    width: 100%; height: 6vw;
+    background-color: rgba(202, 147, 91, 0.799);
+}
+#header .gnb{
+    width: calc(90%);
+    display: flex;
+    justify-content: space-between;
+}
+#header .gnb .logo>img{
+    width: 12vw;
+    padding: 40px;
+    margin-left: 100px;
+}
+#header .gnb .nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+#header .gnb .nav>li a{
+    color: rgb(250, 240, 222);
+    font-size: 1.2vw;
+}
+
+#section .mainbg{
+    width: 100%; height: 45vw;
+    /* border: 1px solid saddlebrown; */
+}
+#section .mainbg .main_img{
+    width: 100%; height: 100%;
+    position: relative;
+}
+#section .mainbg .main_img>li{
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: none;
+    left: 0; top: 0;
+}
+#section .mainbg .main_img .img1{background-image: url(images/shuhwamain4.jpg);}
+#section .mainbg .main_img .img2{background-image: url(images/shuhwamain3.jpg);}
+#section .mainbg .main_img .img3{background-image: url(images/shuhwamain2.jpg);}
+#section .mainbg .main_img .img4{background-image: url(images/shuhwamain.jpg);}
+#section .mainbg .main_img .img_on{display: block;}
+#section .newcont{
+    width: 100%; height: 35vw;
+    margin-top: 80px;
+    /* border: 1px solid lime; */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+}
+#section .newcont>h2{
+    margin-left: 6%;
+    padding-top: 30px;
+    font-size: 2vw;
+    background: linear-gradient(#292931 0%, #a33939 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#section .newcont .new_slide{
+    width: 180%; height: 20vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -21.5%;
+}
+#section .newcont .new_slide>li{
+    width: 9%; height:100%;
+    border: 1px solid rgba(174, 170, 170, 0.461);
+    margin-top: 40px;
+    /* background-color: rgba(250, 235, 215, 0.758); */
+    border-radius: 3vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 0.8vw;
+    position: relative;
+}
+#section .newcont .new_slide>li>span{
+    position: absolute;
+    color: #6f6e6ee9;
+    left: 5%; top: 102%;
+    font-weight: 400;
+}
+#section .newcont .new_slide>li>a{
+    position: absolute;
+    right: 12%; top: 5%;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px; height: 25px;
+}
+#section .newcont .new_slide:hover>li>a img{
+    background-image: url(images/fullheart.png);
+}
+#section .newcont .new_slide .slide1{
+    background-image: url(images/newjacket.jpg);
+}
+#section .newcont .new_slide .slide1:hover{
+    background-image: url(images/newjacketback.jpg);
+}
+#section .newcont .new_slide .slide2{
+    background-image: url(images/newjacketblue.jpg);
+}
+#section .newcont .new_slide .slide2:hover{
+    background-image: url(images/newjacketblueback.jpg);
+}
+#section .newcont .new_slide .slide3{
+    background-image: url(images/newjacketivory.jpg);
+}
+#section .newcont .new_slide .slide3:hover{
+    background-image: url(images/newjacketivoryback.jpg);
+}
+#section .newcont .new_slide .slide4{
+    background-image: url(images/newhoodchacoal.jpg);
+}
+#section .newcont .new_slide .slide4:hover{
+    background-image: url(images/newhoodchacoalback.jpg);
+}
+#section .newcont .new_slide .slide5{
+    background-image: url(images/newmtmnavy.jpg);
+}
+#section .newcont .new_slide .slide5:hover{
+    background-image: url(images/newmtmnavyback.jpg);
+}
+#section .newcont .new_slide .slide6{
+    background-image: url(images/paddinggreen.jpg);
+}
+#section .newcont .new_slide .slide6:hover{
+    background-image: url(images/paddinggreenback.jpg);
+}
+#section .newcont .new_slide .slide7{
+    background-image: url(images/paddingblack.jpg);
+}
+#section .newcont .new_slide .slide7:hover{
+    background-image: url(images/paddingblackback.jpg);
+}
+#section .newcont .new_slide .slide8{
+    background-image: url(images/jacketblackwoman.jpg);
+}
+#section .newcont .new_slide .slide8:hover{
+    background-image: url(images/jacketblackwomanback.jpg);
+}
+#section .newcont .new_slide .slide9{
+    background-image: url(images/newjacketbrown.jpg);
+}
+#section .newcont .new_slide .slide9:hover{
+    background-image: url(images/newjacketbrownback.jpg);
+}
+#section .newcont .new_slide .slide10{
+    background-image: url(images/dufflecoat.jpg);
+}
+#section .newcont .new_slide .slide10:hover{
+    background-image: url(images/dufflecoatback.jpg);
+}
+#section .newcont .newcont_arrow{cursor: pointer;}
+#section .newcont .newcont_arrow .newcont_prev{
+    width: 50px; height: 50px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    /* background-color: saddlebrown; */
+    position: absolute;
+    left: 1.5%; top: 50%;
+    z-index: 1000;
+}
+#section .newcont .newcont_arrow .newcont_next{
+    width:50px; height: 50px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    /* background-color: saddlebrown; */
+    position: absolute;
+    rotate: 180deg;
+    right: 1.5%; top: 50%;
+    z-index: 1000;
+}
+#section .collectbg{
+    width: 100%; height: 30vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/collect_1.jpg);
+    /* background-position: center; */
+    background-size: cover;
+}
+#section .collectbg::after{
+    width: 100%; height: 30vw;
+    opacity: 20%;
+}
+#section .mens{
+    width: 90%; height: 35vw;
+    /* background-color: thistle; */
+    margin: 0 auto;
+    display: flex;
+}
+#section .mens .mens_cont{
+    width: 40%; height: 100%;
+    margin-top: 30px;
+    /* background-color: darkblue; */
+}
+#section .mens .mens_cont .mens_contlist{
+    width: 100%; height: 100%;
+    position: relative;
+}
+#section .mens .mens_cont .mens_contlist li{
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0; top: 0;
+    display: none;
+}
+#section .mens .mens_cont .mens_contlist li.active{display: block;}
+#section .mens .mens_cont .mens_contlist>li:nth-child(1){background-image: url(images/newpantsbltab.jpg);}
+#section .mens .mens_cont .mens_contlist>li:nth-child(2){background-image: url(images/basatitab.jpg);}
+#section .mens .mens_cont .mens_contlist>li:nth-child(3){background-image: url(images/paddingyellowtab.jpg);}
+#section .mens .mens_list{
+    width: 60%; height: 100%;
+    /* background-color: darkkhaki; */
+}
+#section .mens .mens_inlist{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#section .mens .mens_list .mens_inlist>li{
+    width: 30%; height: 50%;
+    margin-top: 150px;
+    border: 1px solid  rgba(174, 170, 170, 0.461);
+    border-radius: 3vw;
+    background-size: cover;
+    background-position:center;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 0.8vw;
+    position: relative;
+}
+#section .mens .mens_list .mens_inlist>li>span{
+    position: absolute;
+    color: #6f6e6ee9;
+    left: 0; top: 102%;
+    font-weight: 400;
+}
+#section .mens .mens_list .mens_inlist>li>a{
+    position: absolute;
+    right: 12%; top: 5%;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px; height: 25px;
+}
+#section .mens .mens_list .mens_inlist>li:nth-child(1){
+    background-image: url(images/newpantsbl.jpg);
+}
+#section .mens .mens_list .mens_inlist>li:nth-child(1):hover{
+    background-image: url(images/newpantsblback.jpg);
+}
+#section .mens .mens_list .mens_inlist>li:nth-child(2){
+    background-image: url(images/knitnavy.jpg);
+}
+#section .mens .mens_list .mens_inlist>li:nth-child(2):hover{
+    background-image: url(images/knitnavyback.jpg);
+}
+#section .mens .mens_list .mens_inlist>li:nth-child(3){
+    background-image: url(images/paddingyellow.jpg);
+}
+#section .mens .mens_list .mens_inlist>li:nth-child(3):hover{
+    background-image: url(images/paddingyellowback.jpg);
+}
+#section .womens{
+    width: 90%; height: 35vw;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+}
+#section .womens .womens_cont{
+    width: 40%; height: 100%;
+}
+#section .womens .womens_cont .womens_contlist{
+    width: 100%; height: 100%;
+    position: relative;
+}
+#section .womens .womens_cont .womens_contlist li{
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0; top: 0;
+    display: none;
+}
+#section .womens .womens_list{
+    width: 60%; height: 100%;
+    /* background-color: darkkhaki; */
+}
+
+#section .womens .womens_inlist{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#section .womens .womens_list .womens_inlist>li{
+    width: 28%; height: 50%;
+    margin-top: 140px;
+    border: 1px solid  rgba(174, 170, 170, 0.461);
+    border-radius: 3vw;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 0.8vw;
+    position: relative;
+}
+#section .womens .womens_list .womens_inlist>li>span{
+    position: absolute;
+    color: #6f6e6ee9;
+    left: 0; top: 102%;
+    font-weight: 400;
+}
+#section .womens .womens_list .womens_inlist>li>a{
+    position: absolute;
+    right: 12%; top: 5%;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px; height: 25px;
+}
+#section .womens .womens_list .womens_inlist>li:nth-child(1){
+    background-image: url(images/cardiganbrown.jpg);
+}
+#section .womens .womens_list .womens_inlist>li:nth-child(1):hover{
+    background-image: url(images/cardiganbrownback.jpg);
+}
+#section .womens .womens_list .womens_inlist>li:nth-child(2){
+    background-image: url(images/ivorysleeve.jpg);
+}
+#section .womens .womens_list .womens_inlist>li:nth-child(2):hover{
+    background-image: url(images/ivorysleeveback.jpg);
+}
+#section .womens .womens_list .womens_inlist>li:nth-child(3){
+    background-image: url(images/pantsnavy.jpg);
+}
+#section .womens .womens_list .womens_inlist>li:nth-child(3):hover{
+    background-image: url(images/pantsnavyback.jpg);
+}
+#section .womens .womens_cont .womens_contlist li.motive{display: block;}
+#section .womens .womens_cont .womens_contlist>li:nth-child(1){background-image: url(images/cardiganbrowntab.jpg);}
+#section .womens .womens_cont .womens_contlist>li:nth-child(2){background-image: url(images/ivorysleevetab.jpg);}
+#section .womens .womens_cont .womens_contlist>li:nth-child(3){background-image: url(images/pantsnavytab.jpg);}
+#section .swiper{
+    width: 90%; height: 35vw;
+}
+
+#section .swiper .swiper-wrapper .swiper-slide{
+    padding: 0 20px;
+}
+#section .swiper .swiper_wrapper .swiper-slide >a img{
+    width: 100%; height: 500px;
+    border-radius: 5px;
+}
+
+
+#footer{
+    width: 100%; height: 17vw;
+    background-color: rgb(207, 202, 202);
+    font-weight: 400;
+    color: rgb(117, 113, 113);
+    box-sizing: border-box;
+}
+
+#footer .footer_cont{
+    width: 90%; height: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+#footer .footer_left{
+    width: 50%; height:100%;
+    letter-spacing: -1px;
+    /* background-color: forestgreen; */
+}
+#footer .footer_cont .footer_left h1{
+    background-image: url(images/logowhite.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 120px; height: 120px;
+}
+#footer .footer_cont .footer_left .company_name{
+    font-weight: 500;
+    color: #000000a9;
+}
+#footer .footer_cont .footer_left .address{
+    line-height: 30px;
+}
+#footer .footer_right{
+    width: 50%; height:100%;
+    display: flex;
+    /* background-color: rebeccapurple; */
+}
+#footer .footer_right>ul{
+    width: 25%; margin-top: 110px;
+    line-height: 30px;
+}
+#footer .footer_right .cs{
+    width: 50%;
+    font-size: 1vw;
+    line-height: 45px;
+}
+#footer .footer_right .cs>li:nth-child(1){
+    font-size: 1.2vw;
+    color: #000;
+}
+#footer .footer_right .cs>li:nth-child(2){
+    font-size: 1.2vw;
+    color: black;
+}
+#footer .footer_right .cs>li:nth-child(3){
+    letter-spacing: 1px;
+    font-size: 0.8vw;
+}
+#footer .footer_bottom{
+    width: 100%;
+    display: flex;
+}
+#footer .footer_bottom h3{
+    width: 50%; 
+    margin-left: 5%;
+    font-size: 0.6vw;
+    color: rgb(153, 149, 149);
+    /* background-color: darkgreen; */
+}
+#footer .footer_bottom .sns{
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 17%;
+    margin-top: -2%;
+}
+#footer .footer_bottom .sns>li>a>img{
+    width: 30px; height: 30px;
+}
