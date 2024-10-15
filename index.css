@@ -365,7 +365,7 @@ body{
 #section .womens .womens_cont .womens_contlist>li:nth-child(2){background-image: url(images/ivorysleevetab.jpg);}
 #section .womens .womens_cont .womens_contlist>li:nth-child(3){background-image: url(images/pantsnavytab.jpg);}
 #section .swiper{
-    width: 90%; height: 30vw;
+    width: 90%; height: 26vw;
     margin-top: 80px;
     margin-bottom: 50px;
     
