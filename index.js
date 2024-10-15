@@ -6,10 +6,13 @@ $(document).ready(function () {
         slidesPerView:3,
         centeredSlides: true,
         loop: true,
-        
+        grabCursor:true,
+        spaceBetween: 100,
         navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+        autoplay:true,
+        delay:3000,
         },
     });
 

@@ -365,17 +365,18 @@ body{
 #section .womens .womens_cont .womens_contlist>li:nth-child(2){background-image: url(images/ivorysleevetab.jpg);}
 #section .womens .womens_cont .womens_contlist>li:nth-child(3){background-image: url(images/pantsnavytab.jpg);}
 #section .swiper{
-    width: 90%; height: 35vw;
+    width: 90%; height: 30vw;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    
 }
-
-#section .swiper .swiper-wrapper .swiper-slide{
-    padding: 0 20px;
+#section .swiper .swiper-button-prev{}
+#section .swiper .swiper-button-next{}
+#section .swiper .swiper-wrapper {
+    width: 14%; height: 100%;
+    border: 1px solid seagreen;
+    background-repeat: no-repeat;
 }
-#section .swiper .swiper_wrapper .swiper-slide >a img{
-    width: 100%; height: 500px;
-    border-radius: 5px;
-}
-
 
 #footer{
     width: 100%; height: 17vw;
