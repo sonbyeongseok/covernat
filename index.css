@@ -12,7 +12,7 @@ body{
 }
 
 #header{
-    width: 100%; height: 6vw;
+    width: 100%; height: 5vw;
     background-color: rgba(202, 147, 91, 0.799);
 }
 #header .gnb{
@@ -22,14 +22,14 @@ body{
 }
 #header .gnb .logo>img{
     width: 12vw;
-    padding: 40px;
+    padding: 2vw;
     margin-left: 100px;
 }
 #header .gnb .nav{
     width: 50%;
     display: flex;
     justify-content: space-between;
-    padding: 35px;
+    padding: 1.5vw;
 }
 #header .gnb .nav>li a{
     color: rgb(250, 240, 222);
@@ -37,7 +37,7 @@ body{
 }
 
 #section .mainbg{
-    width: 100%; height: 45vw;
+    width: 100%; height: 49vw;
     /* border: 1px solid saddlebrown; */
 }
 #section .mainbg .main_img{
@@ -60,11 +60,9 @@ body{
 #section .newcont{
     width: 100%; height: 35vw;
     margin-top: 80px;
-    /* border: 1px solid lime; */
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    /* display: flex; */
 }
 #section .newcont>h2{
     margin-left: 6%;
@@ -233,7 +231,20 @@ body{
 #section .mens .mens_cont .mens_contlist>li:nth-child(3){background-image: url(images/paddingyellowtab.jpg);}
 #section .mens .mens_list{
     width: 60%; height: 100%;
+    box-sizing: border-box;
     /* background-color: darkkhaki; */
+}
+#section .mens .mens_list h2{
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#292931 0%, #a33939 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 80px;
+    /* background-color: darkblue; */
+    font-size: 2vw; 
+    font-weight: 800;
 }
 #section .mens .mens_inlist{
     height: 100%;
@@ -242,7 +253,7 @@ body{
 }
 #section .mens .mens_list .mens_inlist>li{
     width: 30%; height: 50%;
-    margin-top: 150px;
+    margin-top: 80px;
     border: 1px solid  rgba(174, 170, 170, 0.461);
     border-radius: 3vw;
     background-size: cover;
@@ -310,6 +321,18 @@ body{
     width: 60%; height: 100%;
     /* background-color: darkkhaki; */
 }
+#section .womens .womens_list h2{
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#292931 0%, #a33939 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-top: 50px;
+        background-color: darkblue;
+        font-size: 2vw; 
+        font-weight: 800;
+    }
 
 #section .womens .womens_inlist{
     height: 100%;
@@ -318,7 +341,7 @@ body{
 }
 #section .womens .womens_list .womens_inlist>li{
     width: 28%; height: 50%;
-    margin-top: 140px;
+    margin-top: 50px;
     border: 1px solid  rgba(174, 170, 170, 0.461);
     border-radius: 3vw;
     background-size: cover;
@@ -370,8 +393,18 @@ body{
     margin-bottom: 50px;
     
 }
-#section .swiper .swiper-button-prev{}
-#section .swiper .swiper-button-next{}
+#section .swiper h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 2%;
+    background: linear-gradient(#292931 0%, #a33939 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#section .swiper .swiper-button-prev{display: none;}
+#section .swiper .swiper-button-next{display: none;}
 #section .swiper .swiper-wrapper {
     width: 14%; height: 100%;
     border: 1px solid seagreen;
@@ -430,7 +463,13 @@ body{
 }
 #footer .footer_right .cs>li:nth-child(2){
     font-size: 1.2vw;
-    color: black;
+    cursor: pointer;
+}
+#footer .footer_right .cs>li:nth-child(2):hover{
+    background: linear-gradient(#292931 0%, #a33939 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 #footer .footer_right .cs>li:nth-child(3){
     letter-spacing: 1px;
@@ -454,6 +493,18 @@ body{
     margin-left: 17%;
     margin-top: -2%;
 }
+
 #footer .footer_bottom .sns>li>a>img{
     width: 30px; height: 30px;
+}
+
+
+/*--------------------------------------------tablet--------------------------------------*/
+@media all and (min-width:769px) and (max-width:1024px){
+#header{display: none;}
+}
+
+/*----------------------------mobile---------------------------*/
+@media all and (max-width: 768px){
+
 }
