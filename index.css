@@ -12,38 +12,74 @@ body{
 }
 
 #header{
-    width: 100%; height: 5vw;
-    background-color: rgba(202, 147, 91, 0.799);
+    width: 100%; height: 100px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(221, 170, 119);
+    z-index: 5000;
 }
+
 #header .gnb{
     width: calc(90%);
     display: flex;
     justify-content: space-between;
 }
+
 #header .gnb .logo>img{
     width: 12vw;
     padding: 2vw;
     margin-left: 100px;
 }
+
 #header .gnb .nav{
     width: 50%;
     display: flex;
     justify-content: space-between;
     padding: 1.5vw;
 }
-#header .gnb .nav>li a{
+#header .gnb .nav>li{
+    position: relative;
+}
+#header .gnb .nav>li>a{
     color: rgb(250, 240, 222);
     font-size: 1.2vw;
 }
+#header .gnb .nav>li .sub{
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: 50px;
+    line-height: 35px;
+    display: none;
+    width: 150px;
+    /* border:1px solid red; */
+    text-align: center;
+    /* z-index: -1; */
+}
 
+#header .gnb .sub>li:hover a{
+    color: rgb(231, 96, 34);
+}
+#header .gnb .sub>li>a{
+    color: white;
+    font-size: 0.8vw;
+}
+
+/* #header .gnb>li:hover .sub{display: block;} */
+/*--------------------------Header End------------------------------------------------*/
+#section {
+    margin-top: 143px;
+}
 #section .mainbg{
     width: 100%; height: 49vw;
     /* border: 1px solid saddlebrown; */
 }
+
 #section .mainbg .main_img{
     width: 100%; height: 100%;
     position: relative;
 }
+
 #section .mainbg .main_img>li{
     width: 100%; height: 100%;
     background-size: cover;
@@ -52,13 +88,19 @@ body{
     display: none;
     left: 0; top: 0;
 }
+
 #section .mainbg .main_img .img1{background-image: url(images/shuhwamain4.jpg);}
+
 #section .mainbg .main_img .img2{background-image: url(images/shuhwamain3.jpg);}
+
 #section .mainbg .main_img .img3{background-image: url(images/shuhwamain2.jpg);}
+
 #section .mainbg .main_img .img4{background-image: url(images/shuhwamain.jpg);}
+
 #section .mainbg .main_img .img_on{display: block;}
+
 #section .newcont{
-    width: 100%; height: 35vw;
+    width: 100%; height: 45vw;
     margin-top: 80px;
     box-sizing: border-box;
     position: relative;
@@ -84,7 +126,7 @@ body{
     border: 1px solid rgba(174, 170, 170, 0.461);
     margin-top: 40px;
     /* background-color: rgba(250, 235, 215, 0.758); */
-    border-radius: 3vw;
+    border-radius: 1.5vw;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -226,14 +268,19 @@ body{
     display: none;
 }
 #section .mens .mens_cont .mens_contlist li.active{display: block;}
+
 #section .mens .mens_cont .mens_contlist>li:nth-child(1){background-image: url(images/newpantsbltab.jpg);}
+
 #section .mens .mens_cont .mens_contlist>li:nth-child(2){background-image: url(images/basatitab.jpg);}
+
 #section .mens .mens_cont .mens_contlist>li:nth-child(3){background-image: url(images/paddingyellowtab.jpg);}
+
 #section .mens .mens_list{
     width: 60%; height: 100%;
     box-sizing: border-box;
     /* background-color: darkkhaki; */
 }
+
 #section .mens .mens_list h2{
     width: 100%;
     text-align: center;
@@ -246,16 +293,18 @@ body{
     font-size: 2vw; 
     font-weight: 800;
 }
+
 #section .mens .mens_inlist{
     height: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 #section .mens .mens_list .mens_inlist>li{
     width: 30%; height: 50%;
-    margin-top: 80px;
     border: 1px solid  rgba(174, 170, 170, 0.461);
-    border-radius: 3vw;
+    border-radius: 1.5vw;
+    margin-top: 3%;
     background-size: cover;
     background-position:center;
     transition: all 0.5s;
@@ -263,12 +312,14 @@ body{
     font-size: 0.8vw;
     position: relative;
 }
+
 #section .mens .mens_list .mens_inlist>li>span{
     position: absolute;
     color: #6f6e6ee9;
     left: 0; top: 102%;
     font-weight: 400;
 }
+
 #section .mens .mens_list .mens_inlist>li>a{
     position: absolute;
     right: 12%; top: 5%;
@@ -277,37 +328,47 @@ body{
     background-size: contain;
     width: 25px; height: 25px;
 }
+
 #section .mens .mens_list .mens_inlist>li:nth-child(1){
     background-image: url(images/newpantsbl.jpg);
 }
+
 #section .mens .mens_list .mens_inlist>li:nth-child(1):hover{
     background-image: url(images/newpantsblback.jpg);
 }
+
 #section .mens .mens_list .mens_inlist>li:nth-child(2){
     background-image: url(images/knitnavy.jpg);
 }
+
 #section .mens .mens_list .mens_inlist>li:nth-child(2):hover{
     background-image: url(images/knitnavyback.jpg);
 }
+
 #section .mens .mens_list .mens_inlist>li:nth-child(3){
     background-image: url(images/paddingyellow.jpg);
 }
+
 #section .mens .mens_list .mens_inlist>li:nth-child(3):hover{
     background-image: url(images/paddingyellowback.jpg);
 }
+
 #section .womens{
     width: 90%; height: 35vw;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
 }
+
 #section .womens .womens_cont{
     width: 40%; height: 100%;
 }
+
 #section .womens .womens_cont .womens_contlist{
     width: 100%; height: 100%;
     position: relative;
 }
+
 #section .womens .womens_cont .womens_contlist li{
     width: 100%; height: 100%;
     background-repeat: no-repeat;
@@ -317,10 +378,12 @@ body{
     left: 0; top: 0;
     display: none;
 }
+
 #section .womens .womens_list{
     width: 60%; height: 100%;
     /* background-color: darkkhaki; */
 }
+
 #section .womens .womens_list h2{
         width: 100%;
         text-align: center;
@@ -332,18 +395,19 @@ body{
         background-color: darkblue;
         font-size: 2vw; 
         font-weight: 800;
-    }
+}
 
 #section .womens .womens_inlist{
     height: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 #section .womens .womens_list .womens_inlist>li{
     width: 28%; height: 50%;
-    margin-top: 50px;
     border: 1px solid  rgba(174, 170, 170, 0.461);
-    border-radius: 3vw;
+    border-radius: 1.5vw;
+    margin-top:3%;
     background-size: cover;
     background-position: center;
     transition: all 0.5s;
@@ -351,12 +415,14 @@ body{
     font-size: 0.8vw;
     position: relative;
 }
+
 #section .womens .womens_list .womens_inlist>li>span{
     position: absolute;
     color: #6f6e6ee9;
     left: 0; top: 102%;
     font-weight: 400;
 }
+
 #section .womens .womens_list .womens_inlist>li>a{
     position: absolute;
     right: 12%; top: 5%;
@@ -365,46 +431,60 @@ body{
     background-size: contain;
     width: 25px; height: 25px;
 }
+
 #section .womens .womens_list .womens_inlist>li:nth-child(1){
     background-image: url(images/cardiganbrown.jpg);
 }
+
 #section .womens .womens_list .womens_inlist>li:nth-child(1):hover{
     background-image: url(images/cardiganbrownback.jpg);
 }
+
 #section .womens .womens_list .womens_inlist>li:nth-child(2){
     background-image: url(images/ivorysleeve.jpg);
 }
+
 #section .womens .womens_list .womens_inlist>li:nth-child(2):hover{
     background-image: url(images/ivorysleeveback.jpg);
 }
+
 #section .womens .womens_list .womens_inlist>li:nth-child(3){
     background-image: url(images/pantsnavy.jpg);
 }
+
 #section .womens .womens_list .womens_inlist>li:nth-child(3):hover{
     background-image: url(images/pantsnavyback.jpg);
 }
+
 #section .womens .womens_cont .womens_contlist li.motive{display: block;}
+
 #section .womens .womens_cont .womens_contlist>li:nth-child(1){background-image: url(images/cardiganbrowntab.jpg);}
+
 #section .womens .womens_cont .womens_contlist>li:nth-child(2){background-image: url(images/ivorysleevetab.jpg);}
+
 #section .womens .womens_cont .womens_contlist>li:nth-child(3){background-image: url(images/pantsnavytab.jpg);}
+
 #section .swiper{
     width: 90%; height: 26vw;
     margin-top: 80px;
     margin-bottom: 50px;
-    
 }
+
 #section .swiper h2{
     width: 100%;
+    margin-bottom: 35px;
     text-align: center;
     font-size: 2vw;
-    margin-bottom: 2%;
     background: linear-gradient(#292931 0%, #a33939 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
+
 #section .swiper .swiper-button-prev{display: none;}
+
 #section .swiper .swiper-button-next{display: none;}
+
 #section .swiper .swiper-wrapper {
     width: 14%; height: 100%;
     border: 1px solid seagreen;
@@ -412,7 +492,7 @@ body{
 }
 
 #footer{
-    width: 100%; height: 17vw;
+    width: 100%; height: 350px;
     background-color: rgb(207, 202, 202);
     font-weight: 400;
     color: rgb(117, 113, 113);
@@ -420,15 +500,17 @@ body{
 }
 
 #footer .footer_cont{
-    width: 90%; height: 90%;
+    width: 90%; 
     display: flex;
     margin: 0 auto;
 }
+
 #footer .footer_left{
-    width: 50%; height:100%;
+    width: 50%;
     letter-spacing: -1px;
     /* background-color: forestgreen; */
 }
+
 #footer .footer_cont .footer_left h1{
     background-image: url(images/logowhite.png);
     background-repeat: no-repeat;
@@ -436,75 +518,329 @@ body{
     background-position: center;
     width: 120px; height: 120px;
 }
+
 #footer .footer_cont .footer_left .company_name{
     font-weight: 500;
     color: #000000a9;
 }
+
 #footer .footer_cont .footer_left .address{
     line-height: 30px;
 }
+
 #footer .footer_right{
-    width: 50%; height:100%;
+    width: 55%; height:100%;
     display: flex;
     /* background-color: rebeccapurple; */
 }
+
 #footer .footer_right>ul{
-    width: 25%; margin-top: 110px;
+    width: 25%; margin-top: 100px;
     line-height: 30px;
+}
+
+#footer .footer_right .footer_line2>li:nth-child(3):hover a{
+    text-decoration: underline;
 }
 #footer .footer_right .cs{
     width: 50%;
     font-size: 1vw;
     line-height: 45px;
+    margin-left: 20px;
 }
+
 #footer .footer_right .cs>li:nth-child(1){
     font-size: 1.2vw;
     color: #000;
 }
+
 #footer .footer_right .cs>li:nth-child(2){
     font-size: 1.2vw;
     cursor: pointer;
 }
+
 #footer .footer_right .cs>li:nth-child(2):hover{
     background: linear-gradient(#292931 0%, #a33939 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
+
 #footer .footer_right .cs>li:nth-child(3){
+    width: 100%;
     letter-spacing: 1px;
     font-size: 0.8vw;
 }
+
 #footer .footer_bottom{
     width: 100%;
     display: flex;
 }
+
 #footer .footer_bottom h3{
-    width: 50%; 
+    width: 66%; 
     margin-left: 5%;
     font-size: 0.6vw;
     color: rgb(153, 149, 149);
     /* background-color: darkgreen; */
 }
+
+#footer .footer_bottom .sns>li a>img{position: absolute;}
+
+#footer .footer_bottom .sns>li .color{display: none;}
+#footer .footer_bottom .sns>li:hover .color{display: block;}
+#footer .footer_bottom .sns>li:nth-child(1):hover .dark{
+    display: none;
+}
+#footer .footer_bottom .sns>li:nth-child(2):hover .dark{
+    display: none;
+}
+#footer .footer_bottom .sns>li:nth-child(3):hover .dark{
+    display: none;
+}
 #footer .footer_bottom .sns{
-    width: 8%;
+    width: 10vw;
     display: flex;
     justify-content: space-around;
-    margin-left: 17%;
-    margin-top: -2%;
+    margin-top: 1%;
+    transition: all 0.3s;
 }
 
 #footer .footer_bottom .sns>li>a>img{
-    width: 30px; height: 30px;
+    width: 2vw; height: 2vw;
+
 }
 
+/*------------------------글씨 크기 조정---------------------------------*/
+@media all and (min-width:1024px) and (max-width:1400px){
+    #section .newcont .new_slide>li{
+        font-size: 1em;
+    }
+}
 
 /*--------------------------------------------tablet--------------------------------------*/
 @media all and (min-width:769px) and (max-width:1024px){
+
 #header{display: none;}
+
+#section .newcont{
+    width: 100%; height: 65vw;
 }
 
+#section .newcont>h2{
+    font-size: 3.5vw;
+}
+
+#section .newcont .new_slide{
+    width: 300%; height: 35vw;
+    margin-left: -30.5%;
+}
+
+#section .newcont .new_slide>li{
+    font-size: 1.2vw;
+}
+
+#section .collectbg{
+    width: 100%; height: 30vw;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-image: url(images/collect_1.jpg);
+    /* background-position: center; */
+}
+
+#section .mens .mens_cont{
+    width: 50%; height: 40vw;
+}
+
+#section .mens .mens_list h2{
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+#section .mens .mens_list .mens_inlist>li{
+    font-size: 1.2vw;
+    margin-left: 30px;
+}
+
+#section .mens .mens_list .mens_inlist>li>span img{width: 35px; height: 20px;}
+
+#section .womens .womens_cont{
+    width: 50%; height: 44vw;
+}
+
+#section .womens .womens_list h2{
+    font-size: 3vw;
+}
+
+#section .womens .womens_list .womens_inlist>li{
+    font-size: 1.2vw;
+    margin-right: 30px;
+}
+
+#section .womens .womens_list .womens_inlist>li>span img{width: 35px; height: 20px;}
+
+#section .swiper {
+    margin-top: 100px;
+}
+
+#footer{height: 35vw;}
+
+#footer .footer_cont .footer_left{font-size: 1.3vw;}
+
+#footer .footer_cont .footer_right{font-size: 1.3vw;}
+
+#footer .footer_right .cs{
+    width: 80%;
+    margin-left: 10%;
+}
+#footer .footer_right .cs>li:nth-child(1){font-size: 2vw;}
+#footer .footer_right .cs>li:nth-child(2){font-size: 1.5vw;}
+#footer .footer_right .cs>li:nth-child(3){font-size: 0.8vw;}
+#footer .footer_bottom h3{font-size: 1vw;}
+#footer .footer_bottom .sns{display: none;}
+}
 /*----------------------------mobile---------------------------*/
 @media all and (max-width: 768px){
+    #header{display: none;}
+
+    #section .mainbg{
+        width: 100%; height: 160vw;
+    }
+    #section .mainbg .main_img>li{
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #section .mainbg .main_img .img3{display: none;}
+    
+    #section .newcont{
+        width: 100%; height: 160vw;
+    }
+
+    #section .newcont>h2{
+        font-size: 6vw;
+        text-align: center;
+    }
+    #section .newcont .new_slide{
+        width: 1400%;
+    }
+    #section .newcont .new_slide>li{
+        font-size: 2.5vw; 
+        height: 120vw;
+    }
+    #section .newcont .new_slide>li>span{
+        left: 30%;
+    }
+    #section .collectbg{
+        height: 40vw;
+    }
+
+    #section .mens{width: 90%; height: 45vw;}
+
+    #section .mens .mens_list h2{
+        font-size: 3.5vw;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    #section .mens .mens_list .mens_inlist>li{
+        font-size: 2vw;
+        margin-left: 30px;
+    }
+
+    #section .mens .mens_cont{display: none;}
+
+    #section .mens .mens_list{width: 100%;}
+
+    #section .mens .mens_list .mens_inlist>li{
+        height: 40vw;
+    }
+
+    #section .mens .mens_list .mens_inlist>li:nth-child(3){
+        display: none;
+    }
+
+    #section .mens .mens_list .mens_inlist>li>span img{display: none;}
+
+    #section .mens .mens_list .mens_inlist>li>a{width: 10px; height: 10px;}
+
+    #section .womens{width: 100%; margin-top: 150px;}
+
+    #section .womens .womens_list h2{
+        font-size: 3.5vw;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    #section .womens .womens_list .womens_inlist>li{
+        font-size: 2vw;
+    }
+
+    #section .womens .womens_cont{display: none;}
+
+    #section .womens .womens_list{width: 100%;}
+
+    #section .womens .womens_list .womens_inlist>li{
+        height: 40vw;
+    }
+
+    #section .womens .womens_list .womens_inlist>li:nth-child(3){
+        display: none;
+    }
+
+    #section .womens .womens_list .womens_inlist>li>span img{display: none;}
+
+    #section .womens .womens_list .womens_inlist>li>a{width: 10px; height: 10px;}
+    
+    #section .swiper{
+        margin-top: 45vw;
+    }
+
+    #section .swiper h2{
+        margin-bottom: 20px;
+        font-size: 3.5vw;
+    }
+
+    #footer{
+        height: 240px;
+    }
+
+    #footer .footer_left {display: none;}
+    
+    #footer .footer_right{
+        margin-top: -60px;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    #footer .footer_right .cs>li:nth-child(1){
+        font-size: 3vw;
+    }
+
+    #footer .footer_right .cs>li:nth-child(2){
+        font-size: 3vw;
+    }
+
+    #footer .footer_right .cs>li:nth-child(3){
+        font-size: 1.5vw;
+    }
+
+    #footer .footer_bottom{
+        height: 30px;
+        /* background-color: darkblue; */
+        margin-top: 30px;
+    }
+
+    #footer .footer_bottom> h3{
+        font-size: 1.5vw;
+    }
+
+    #footer .footer_bottom .sns>li>a>img{
+        display: none;
+    }
+
+    #footer .footer_bottom .sns>li a{
+        left: 10%;
+    }
 
 }

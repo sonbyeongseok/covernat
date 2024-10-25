@@ -41,7 +41,18 @@ $(".newcont_next").click(function(){
     });
 });
 });
-
+$(document).ready(function (){
+    $("#header").mouseenter(function () {
+        $("#header").stop().animate({"height" :"213px"});
+        $(".sub").stop().fadeIn();
+    });
+    $("#header").mouseleave(function () {
+        $("#header").stop().animate({"height" :"143px"});
+        $(".sub").stop().fadeOut();
+    });
+    });
+    
+    
 // $(".mens_inlist>li").click(function () {
 //     let list = $(this).index();
 //     $(".mens_contlist>li").stop().fadeOut();
