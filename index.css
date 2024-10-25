@@ -12,7 +12,7 @@ body{
 }
 
 #header{
-    width: 100%; height: 100px;
+    width: 100%; height: 143px;
     position: absolute;
     top: 0;
     background-color: rgb(221, 170, 119);
@@ -490,7 +490,9 @@ body{
     border: 1px solid seagreen;
     background-repeat: no-repeat;
 }
-
+#section .swiper2{
+    display: none;
+}
 #footer{
     width: 100%; height: 350px;
     background-color: rgb(207, 202, 202);
@@ -588,7 +590,9 @@ body{
 #footer .footer_bottom .sns>li a>img{position: absolute;}
 
 #footer .footer_bottom .sns>li .color{display: none;}
+
 #footer .footer_bottom .sns>li:hover .color{display: block;}
+
 #footer .footer_bottom .sns>li:nth-child(1):hover .dark{
     display: none;
 }
@@ -613,15 +617,31 @@ body{
 
 /*------------------------글씨 크기 조정---------------------------------*/
 @media all and (min-width:1024px) and (max-width:1400px){
+    #header{height: 6vw;}
+
+    #header .gnb> .nav>.sub{
+        
+    }
+
+    #section {margin-top: 60px;}
     #section .newcont .new_slide>li{
         font-size: 1em;
     }
+    #section .mens .mens_list .mens_inlist>li{
+        font-size: 1.2vw;
+    }
+    #section .womens .womens_list .womens_inlist>li{
+        font-size: 1.2vw;
+    }
+    
 }
 
 /*--------------------------------------------tablet--------------------------------------*/
 @media all and (min-width:769px) and (max-width:1024px){
 
 #header{display: none;}
+
+#section{margin-top: 0px;}
 
 #section .newcont{
     width: 100%; height: 65vw;
@@ -680,7 +700,13 @@ body{
 #section .womens .womens_list .womens_inlist>li>span img{width: 35px; height: 20px;}
 
 #section .swiper {
-    margin-top: 100px;
+    width: 100%;
+    height: 35vw;
+    margin-top: 120px;
+}
+
+#section .swiper h2{
+    font-size: 3.5vw;
 }
 
 #footer{height: 35vw;}
@@ -703,9 +729,12 @@ body{
 @media all and (max-width: 768px){
     #header{display: none;}
 
+    #section{margin-top: 0px;}
+
     #section .mainbg{
         width: 100%; height: 160vw;
     }
+
     #section .mainbg .main_img>li{
         background-size: cover;
         background-position: center;
@@ -721,16 +750,20 @@ body{
         font-size: 6vw;
         text-align: center;
     }
+    
     #section .newcont .new_slide{
         width: 1400%;
     }
+
     #section .newcont .new_slide>li{
         font-size: 2.5vw; 
         height: 120vw;
     }
+
     #section .newcont .new_slide>li>span{
         left: 30%;
     }
+
     #section .collectbg{
         height: 40vw;
     }
@@ -792,13 +825,34 @@ body{
 
     #section .womens .womens_list .womens_inlist>li>a{width: 10px; height: 10px;}
     
-    #section .swiper{
-        margin-top: 45vw;
-    }
+    #section .swiper{display: none;}
 
-    #section .swiper h2{
-        margin-bottom: 20px;
-        font-size: 3.5vw;
+    #section .swiper2{
+        display: block;
+        width: 90%; height: 26vw;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    
+    #section .swiper2 h2{
+        width: 100%;
+        margin-bottom: 35px;
+        text-align: center;
+        font-size: 2vw;
+        background: linear-gradient(#292931 0%, #a33939 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    
+    #section .swiper2 .swiper-button-prev2{display: none;}
+    
+    #section .swiper2 .swiper-button-next2{display: none;}
+    
+    #section .swiper2 .swiper-wrapper2 {
+        width: 14%; height: 100%;
+        border: 1px solid seagreen;
+        background-repeat: no-repeat;
     }
 
     #footer{

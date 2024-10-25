@@ -1,4 +1,17 @@
 $(document).ready(function () {
+    let Swiper = new Swiper('.swiper2', {
+        slidesPerView:1,
+        centeredSlides: true,
+        loop: true,
+        grabCursor:true,
+        spaceBetween: 100,
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+        autoplay:{ delay: 3000 },
+    });
+});
+
+$(document).ready(function () {
     let i = 0;
     let m = 0;
     let count = $(".main_img>li").length;
@@ -12,6 +25,7 @@ $(document).ready(function () {
         prevEl: '.swiper-button-prev',
         autoplay:{ delay: 3000 },
     });
+
 
 setInterval(function(){
     if(i == count-1){
@@ -51,8 +65,7 @@ $(document).ready(function (){
         $(".sub").stop().fadeOut();
     });
     });
-    
-    
+
 // $(".mens_inlist>li").click(function () {
 //     let list = $(this).index();
 //     $(".mens_contlist>li").stop().fadeOut();
