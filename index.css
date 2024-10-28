@@ -743,7 +743,7 @@ body{
     #section .mainbg .main_img .img3{display: none;}
     
     #section .newcont{
-        width: 100%; height: 160vw;
+        width: 100%; height: 180vw;
     }
 
     #section .newcont>h2{
@@ -752,11 +752,11 @@ body{
     }
     
     #section .newcont .new_slide{
-        width: 1400%;
+        width: 1350%;
     }
 
     #section .newcont .new_slide>li{
-        font-size: 2.5vw; 
+        font-size: 4.5vw;
         height: 120vw;
     }
 
@@ -765,19 +765,19 @@ body{
     }
 
     #section .collectbg{
-        height: 40vw;
+        height: 50vw;
     }
 
-    #section .mens{width: 90%; height: 45vw;}
+    #section .mens{width: 100%; height: 45vw;}
 
     #section .mens .mens_list h2{
-        font-size: 3.5vw;
+        font-size: 5vw;
         margin-top: 50px;
         margin-bottom: 30px;
     }
 
     #section .mens .mens_list .mens_inlist>li{
-        font-size: 2vw;
+        font-size: 3vw;
         margin-left: 30px;
     }
 
@@ -800,13 +800,13 @@ body{
     #section .womens{width: 100%; margin-top: 150px;}
 
     #section .womens .womens_list h2{
-        font-size: 3.5vw;
+        font-size: 5vw;
         margin-top: 50px;
         margin-bottom: 30px;
     }
 
     #section .womens .womens_list .womens_inlist>li{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #section .womens .womens_cont{display: none;}
@@ -825,36 +825,16 @@ body{
 
     #section .womens .womens_list .womens_inlist>li>a{width: 10px; height: 10px;}
     
-    #section .swiper{display: none;}
-
-    #section .swiper2{
-        display: block;
-        width: 90%; height: 26vw;
-        margin-top: 80px;
-        margin-bottom: 50px;
+    #section .swiper{
+        margin-top: 50%;
+        width: 100%; height: 120vw;
     }
-    
-    #section .swiper2 h2{
-        width: 100%;
-        margin-bottom: 35px;
-        text-align: center;
-        font-size: 2vw;
-        background: linear-gradient(#292931 0%, #a33939 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+    #section .swiper h2{
+        font-size: 5vw;
     }
-    
-    #section .swiper2 .swiper-button-prev2{display: none;}
-    
-    #section .swiper2 .swiper-button-next2{display: none;}
-    
-    #section .swiper2 .swiper-wrapper2 {
-        width: 14%; height: 100%;
-        border: 1px solid seagreen;
-        background-repeat: no-repeat;
+    #section .swiper .swiper-wrapper{
+        width: 300%; height: 80vw;
     }
-
     #footer{
         height: 240px;
     }
