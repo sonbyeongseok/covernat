@@ -13,7 +13,7 @@ $(document).ready(function () {
         breakpoints: {
         
             768: {
-            slidesPerView: 3,  //브라우저가 768보다 클 때
+            slidesPerView: 2,  //브라우저가 768보다 클 때
             spaceBetween: 40,
             },
             1024: {
